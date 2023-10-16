@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        button{
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="2">So thu 1</td>
+        <td colspan="2">So thu 2</td>
+    </tr>
+    <tr>
+        <td colspan="2"><input  id="a" type="int"></td>
+        <td colspan="2"><input  id="b" type="int"></td>
+    </tr>
+    <tr>
+        <td><button onclick="result4()">+</button></td>
+        <td><button onclick="result1()">-</button></td>
+        <td><button onclick="result2()">x</button></td>
+        <td><button onclick="result3()">/</button></td>
+    </tr>
+</table>
+<h3 id="output1"></h3>
+
+</body>
+<script>
+    function result4(){
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+
+        document.getElementById("output1").innerHTML=a+b;
+    }
+    function result1(){
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+
+        document.getElementById("output1").innerHTML=a-b;
+    }
+    function result2(){
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+
+        document.getElementById("output1").innerHTML=a*b;
+    }
+    function result3(){
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+
+        document.getElementById("output1").innerHTML=a/b;
+    }
+
+</script>
+</html>
