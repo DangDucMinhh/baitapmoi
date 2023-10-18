@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>
+    So thang
+</h1>
+<input id="a" type="integer">
+       <button type="button" onclick="result()">Click</button>
+<h2 id="output"></h2>
+</body>
+</html>
+<script>
+    function result() {
+        let month = +document.getElementById("a").value;
+        if (month < 1 || month > 12) {
+            document.getElementById("output").innerHTML = "khong phu hop";
+        } else {
+            let dayOfMonth;
+            switch (month) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    dayOfMonth = "31";
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+
+                    dayOfMonth = "30";
+                    break;
+                default:
+                    dayOfMonth = "28 or 29";
+                    break;
+            }
+                    document.getElementById("output").innerHTML = "Thang" + month + "co" + dayOfMonth
+
+        }
+    }
+</script>
