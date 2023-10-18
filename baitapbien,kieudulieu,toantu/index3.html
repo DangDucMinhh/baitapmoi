@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Công thức tinh chu vi hình tròn</h1>
+<p>Nhập bán kính</p>
+<input id="R" >
+<button onclick="check()">Tính</button>
+<h2 id = "result"></h2>
+</body>
+</html>
+<script>
+    function check() {
+        let a = +document.getElementById("R").value;
+        let b = (a*2);
+        document.getElementById("result").innerHTML = "Chu vi hinh tron la :" + b + "π";
+    }
+</script>
